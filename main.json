@@ -38,11 +38,11 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://templatestore07222023.blob.core.windows.net/templates/sqldb.json",
+                    "uri": "https://github.com/C0Dash/AZ-104/blob/main/sqldb.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parametersLink": {
-                    "uri": "https://templatestore07222023.blob.core.windows.net/templates/sqldb-parameters.json",
+                    "uri": "https://github.com/C0Dash/AZ-104/blob/main/sqldb-parameters.json",
                     "contentVersion": "1.0.0.0"
                 }
             }
