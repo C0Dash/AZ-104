@@ -21,7 +21,7 @@
         {
             "type": "Microsoft.Sql/servers",
             "apiVersion": "2022-05-01-preview",
-            "name": "sqlserver07222023",
+            "name": "sqlserver07222023V2",
             "location": "[resourceGroup().location]",
             "properties": {
                 "administratorLogin": "[parameters('SQLLogin')]",
@@ -31,7 +31,7 @@
         {
             "type": "Microsoft.Sql/servers/databases",
             "apiVersion": "2022-05-01-preview",
-            "name": "[format('{0}/{1}','sqlserver07222023','appdb')]",
+            "name": "[format('{0}/{1}','sqlserver07222023V2','appdb')]",
             "location": "[resourceGroup().location]",
             "sku": {
                 "name": "Basic",
@@ -39,7 +39,7 @@
             },
             "properties": {},
             "dependsOn":[
-                "[resourceId('Microsoft.Sql/servers','sqlserver07222023')]"
+                "[resourceId('Microsoft.Sql/servers','sqlserver07222023V2')]"
             ]
         }
     ],
